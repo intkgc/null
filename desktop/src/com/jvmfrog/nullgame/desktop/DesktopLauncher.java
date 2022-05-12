@@ -1,8 +1,8 @@
-package com.jvmfrog.game.desktop;
+package com.jvmfrog.nullgame.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.jvmfrog.game.Main;
+import com.jvmfrog.nullgame.Main;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {

@@ -1,10 +1,9 @@
-package com.jvmfrog.game;
+package com.jvmfrog.nullgame;
 
 import android.os.Bundle;
 
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
-import com.jvmfrog.game.Main;
 
 public class AndroidLauncher extends AndroidApplication {
 	@Override
