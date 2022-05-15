@@ -1,6 +1,8 @@
 package com.jvmfrog.nullgame.screen;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.scenes.scene2d.Stage;
@@ -20,6 +22,10 @@ public class MainMenuScreen implements Screen {
         stage = new Stage();
         stage.setViewport(viewport);
         stage.addActor(new MainMenuScreenGroup());
+
+        Music music = Gdx.audio.newMusic(Gdx.files.internal("audio/mainMenu.mp3"));
+        music.setLooping(true);
+        music.play();
     }
 
     @Override
