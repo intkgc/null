@@ -20,11 +20,11 @@ public class MainMenuScreenGroup extends Group {
     public void build() {
         table = new Table().center().add().getTable();
         Table panel = new Table().center();
-        panel.add(new Image(new Texture("MainMenuLogo.png"))).row();
+        panel.add(new Image(new Texture("main_menu_logo.png"))).row();
         panel.add(new TextButton("Single player", Vars.getSkin())).row();
         panel.add(new TextButton("multi player", Vars.getSkin()));
         table.add(panel);
-        bottomTable = new Table().right().bottom().add(new Label("v0.1 by JVMFrog null team", Vars.getSkin())).getTable();
+        bottomTable = new Table().right().bottom().add(new Label("v0.1 by JVMFrog null-team", Vars.getSkin())).getTable();
         addActor(bottomTable);
         addActor(table);
     }
