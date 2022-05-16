@@ -24,7 +24,7 @@ public class MainMenuScreen implements Screen {
         stage.setViewport(viewport);
         stage.addActor(new MainMenuScreenGroup());
 
-        Vars.getMusicHandler().play("mainMenu", true);
+        Vars.getMusicHandler().play("main_menu", true);
     }
 
     @Override

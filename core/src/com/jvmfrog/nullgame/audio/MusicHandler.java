@@ -17,13 +17,12 @@ public class MusicHandler {
 
     private void load() {
         musicMap.clear();
-        FileHandle audioDir = Gdx.files.internal("android/assets/audio");
-        FileHandle[] audios = audioDir.list();
+        String[] audios = Gdx.files.internal("audio/music.list")
+                .readString().split("\\r?\\n");
 
-        for (FileHandle audio : audios) {
-            if (audio.extension().equals("mp3")) {
-                musicMap.put(audio.nameWithoutExtension(), Gdx.audio.newMusic(audio));
-            }
+        for (String audio : audios) {
+            FileHandle audioFile = Gdx.files.internal("audio/" + audio + ".mp3");
+            musicMap.put(audio, Gdx.audio.newMusic(audioFile));
         }
     }
 
