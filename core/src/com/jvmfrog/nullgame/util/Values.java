@@ -1,11 +1,11 @@
-package com.jvmfrog.nullgame;
+package com.jvmfrog.nullgame.util;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.jvmfrog.nullgame.audio.MusicHandler;
 
 /*Class for constants and static resources =)*/
-public class Vars {
+public class Values {
     private static Skin skin;
     private static MusicHandler musicHandler;
 

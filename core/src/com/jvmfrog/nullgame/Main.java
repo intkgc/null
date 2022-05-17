@@ -3,12 +3,12 @@ package com.jvmfrog.nullgame;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
-import com.jvmfrog.nullgame.screen.MainMenuScreen;
+import com.jvmfrog.nullgame.ui.MainMenuScreen;
 
 public class Main extends Game {
 	@Override
 	public void create () {
-		setScreen(new MainMenuScreen());
+		setScreen(new MainMenuScreen(this));
 	}
 
 	@Override
