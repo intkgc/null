@@ -4,11 +4,14 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.jvmfrog.nullgame.ui.MainMenuScreen;
+import com.jvmfrog.nullgame.util.GameScreenHandler;
+import com.jvmfrog.nullgame.util.Values;
 
 public class Main extends Game {
 	@Override
 	public void create () {
-		setScreen(new MainMenuScreen(this));
+		Values.setGameScreenHandler(new GameScreenHandler(this));
+		setScreen(new MainMenuScreen());
 	}
 
 	@Override

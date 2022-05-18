@@ -16,12 +16,12 @@ public class MainMenuGroup extends Group {
     private Table table;
     private Table bottomTable;
 
-    public MainMenuGroup(Main main) {
+    public MainMenuGroup() {
         super();
-        build(main);
+        build();
     }
 
-    public void build(Main main) {
+    public void build() {
         Button button = new TextButton("Single player", Values.getSkin());
 
         table = new Table().center().add().getTable();
@@ -37,7 +37,7 @@ public class MainMenuGroup extends Group {
         button.addListener(new InputListener(){
             @Override
             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
-                main.setScreen(new WorldScreen(new SinglePlayerWorld()));
+                Values.getGameScreenHandler().setScreen(new WorldScreen(new SinglePlayerWorld()));
                 return true;
             }
         });

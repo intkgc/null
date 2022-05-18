@@ -11,10 +11,8 @@ import com.jvmfrog.nullgame.util.Values;
 public class MainMenuScreen implements Screen {
 
     private final Stage stage;
-    private final Main main;
 
-    public MainMenuScreen(Main main){
-        this.main = main;
+    public MainMenuScreen(){
         stage = new Stage();
     }
 
@@ -22,7 +20,7 @@ public class MainMenuScreen implements Screen {
     public void show() {
         Values.getMusicHandler().play("main_menu", true);
         stage.setViewport(new ScreenViewport());
-        stage.addActor(new MainMenuGroup(main));
+        stage.addActor(new MainMenuGroup());
         Gdx.input.setInputProcessor(stage);
     }
 
