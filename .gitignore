@@ -5,6 +5,9 @@
 *.ear
 hs_err_pid*
 
+# Это кароче чтобы не было конфликтов :D
+core/src/com/jvmfrog/nullgame/util/Version.java
+
 ## Robovm
 /ios/robovm-build/
 
